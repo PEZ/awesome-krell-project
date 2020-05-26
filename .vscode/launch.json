@@ -1,0 +1,36 @@
+{
+    // Use IntelliSense to learn about possible attributes.
+    // Hover to view descriptions of existing attributes.
+    // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": "Attach to packager",
+            "cwd": "${workspaceFolder}",
+            "type": "reactnative",
+            "request": "attach"
+        },
+        {
+            "name": "Debug Android",
+            "cwd": "${workspaceFolder}",
+            "type": "reactnative",
+            "request": "launch",
+            "platform": "android"
+        },
+        {
+            "type": "chrome",
+            "request": "attach",
+            "name": "Attach to Debugger",
+            "port": 9222,
+            "webRoot": "${workspaceFolder}",
+        },
+        {
+            "type": "chrome",
+            "request": "launch",
+            "name": "Launch Debugger",
+            "url": "http://localhost:8081/debugger-ui/",
+            "webRoot": "${workspaceFolder}",
+
+        }
+    ]
+}
